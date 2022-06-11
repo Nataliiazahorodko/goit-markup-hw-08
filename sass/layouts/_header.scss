@@ -1,0 +1,52 @@
+/*****header section *********/
+
+.header {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header-contact__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-contact__list {
+  margin-left: auto;
+}
+
+.header-contact__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-contact__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--third-main-color);
+
+  transition: color var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,0 +1,9 @@
+.main__button {
+
+@include button;
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-button-hover);
+  }
+}

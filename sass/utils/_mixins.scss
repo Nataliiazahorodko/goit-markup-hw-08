@@ -1,0 +1,37 @@
+@mixin button {
+        margin-right: auto;
+            margin-left: auto;
+            padding: 10px 32px;
+            border-radius: 4px;
+            border-color: transparent;
+            max-width: 240px;
+            min-width: 200px;
+            min-height: 40px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+        
+            color: var(--second-main-color);
+            background-color: var(--accent-color);
+        
+            transition: background-color var(--transition-timing-function);
+
+}
+
+@mixin social-link {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    
+        transition: background-color var(--transition-timing-function);
+}
+
