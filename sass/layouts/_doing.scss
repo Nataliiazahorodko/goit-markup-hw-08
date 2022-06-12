@@ -1,5 +1,12 @@
 /* секция чем мы занимаемся */
 
+.doing__section {
+  @include mg(not-desktop) {
+    display: none;
+  }
+ 
+}
+
 .doing__title {
   margin-bottom: 50px;
   font-weight: 700;
