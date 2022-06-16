@@ -70,12 +70,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -556,14 +550,22 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo__right--main {
@@ -572,6 +574,12 @@ img {
 
 .logo__right--footer {
   color: var(--second-main-color);
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -584,6 +592,7 @@ img {
 }
 
 .nav__item {
+  position: relative;
   margin-right: 50px;
 }
 
@@ -592,7 +601,12 @@ img {
 }
 
 .nav__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -815,6 +829,7 @@ img {
 
 /*****header section *********/
 .header {
+  position: relative;
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--header-border);
 }
@@ -828,36 +843,71 @@ img {
           align-items: center;
 }
 
-.header-contact__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 1199.98px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.header-contact__list {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header-contact__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
 }
 
 .header-contact__item {
-  margin-right: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 }
 
-.header-contact__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+  }
+  .header-contact__item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .header-contact__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -871,9 +921,26 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contact__link:hover, .header-contact__link:focus {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .header-contact-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
   fill: currentColor;
-  margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 /******* секция герой ********/

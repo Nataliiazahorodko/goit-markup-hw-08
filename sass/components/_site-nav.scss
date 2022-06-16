@@ -11,16 +11,16 @@
 
 .nav__item {
   position: relative;
-  
+
   margin-right: 50px;
 
   &:last-child {
     margin-right: 0;
   }
 }
-
 .nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;

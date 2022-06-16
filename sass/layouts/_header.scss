@@ -36,6 +36,7 @@
 }
 
 .header-contact__item {
+  @include FontStyles(500, 12px, 1.16, null, 0.02em, null, null);
 &:not(:last-child) {
     @include mq(tablet-only) {
       margin-bottom: 10px;
@@ -53,10 +54,9 @@
 }
 
 .header-contact__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,12 +78,16 @@
 
 .header-contact-icon {
 
+    width: 14px;
+      height: 14px;
+      margin-right: 8px;
+    
       @include mq(desktop) {
-          width: 16px;
-          height: 16px;
-          margin-right: 10px;
-        }
-        
-  fill: currentColor;
-  margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+      }
+    
+      fill: currentColor;
+
 }
