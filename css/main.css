@@ -161,8 +161,8 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  -webkit-transition: fill;
-  transition: fill;
+  -webkit-transition: fill var(--transition-timing-function);
+  transition: fill var(--transition-timing-function);
   padding: 10px 0;
 }
 
@@ -173,7 +173,7 @@ img {
 }
 
 .menu-button:hover, .menu-button:focus {
-  fill: var(--hover-blue);
+  fill: var(--accent-color);
   cursor: pointer;
 }
 
@@ -770,6 +770,13 @@ img {
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu__link--current {

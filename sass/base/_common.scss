@@ -10,3 +10,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+    body.modal-open {
+            overflow: hidden;
+        }
+    
+        body.mobile-menu-open {
+            @include mq(mobile-only) {
+                overflow: hidden;
+            }
+        }
+
+
