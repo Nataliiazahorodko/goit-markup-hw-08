@@ -1,6 +1,7 @@
 /*****header section *********/
 
 .header {
+  position: relative;
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--header-border);
 }
@@ -8,22 +9,46 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  @include mq(not-desktop) {
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  @include mq(desktop) {
+    margin-right: 93px;
+  }
 }
 
 .header-contact__list {
-  display: flex;
-  align-items: center;
-}
+  @include mq(mobile-only) {
+    display: none;
+  }
 
-.header-contact__list {
-  margin-left: auto;
+  @include mq(desktop) {
+      display: flex;
+        align-items: center;
+        margin-left: auto;
+  }
+
+
 }
 
 .header-contact__item {
-  margin-right: 50px;
+&:not(:last-child) {
+    @include mq(tablet-only) {
+      margin-bottom: 10px;
+    }
+  }
 
-  &:last-child {
-    margin-right: 0;
+  @include mq(desktop) {
+    @include FontStyles(500, 14px, 1.14, null, 0.02em, null, null);
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -43,10 +68,22 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+
+    @include mq(desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
   }
 }
 
 .header-contact-icon {
+
+      @include mq(desktop) {
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+        }
+        
   fill: currentColor;
   margin-right: 10px;
 }

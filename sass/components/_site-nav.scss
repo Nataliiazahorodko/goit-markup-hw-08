@@ -1,9 +1,17 @@
+.nav {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+
 .nav__list {
   display: flex;
   align-items: center;
 }
 
 .nav__item {
+  position: relative;
+  
   margin-right: 50px;
 
   &:last-child {

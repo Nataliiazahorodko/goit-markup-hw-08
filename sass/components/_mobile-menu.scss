@@ -2,7 +2,7 @@
 .mobile-menu {
     display: none;
 
-    @include mq (mobile-only) {
+    @include mq(mobile-only) {
        
         position: fixed;
         top: 0;
@@ -12,7 +12,7 @@
 
         padding: 48px 40px;
 
-        background-color: var(--hero-h1-white);
+        background-color: var(--bg-color);
 
         &.is-open {
             display: flex;
@@ -27,10 +27,12 @@
 }
 
 .mobile-menu__link {
-    @include FontStyles(500, 40px, 1.18, null, 0.02em, null, null);
+    // @include FontStyles(500, 40px, 1.18, null, 0.02em, null, null);
 
     &--current {
-        @include FontStyles(500, 40px, 1.18, null, 0.02em, var(--hover-blue), null);
+        @include FontStyles(500, 40px, 1.18, null, 0.02em, var (
+
+        ), null);
     }
 }
 
@@ -40,14 +42,20 @@
 }
 
 .mobile-menu__contacts-link {
-    @include FontStyles(500, 24px, 1.17, null, 0.02em, var(--light-grey), null);
-    transition: color $transitionLinks,
-        font-size $transitionLinks;
-
-    &:hover,
-    &:focus {
-        @include FontStyles(500, 34px, 1.18, null, 0.02em, var(--hover-blue), null);
-    }
+    display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-color);
+    
+        transition: color var(--transition-timing-function);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);}
 }
 
 .mobile-menu__socials {
@@ -60,7 +68,7 @@
 
 .mobile-menu__social-item {
     position: relative;
-    @include FontStyles(500, 18px, 1.22, null, 0.02em, var(--hover-blue), null);
+    
 }
 
 .mobile-menu__social-item:not(:last-child)>.mobile-menu__social-link::after {
