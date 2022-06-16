@@ -39,7 +39,7 @@
     @include mq(mobile-only) {
        
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -49,7 +49,7 @@
         background-color: var(--bg-color);
 
         &.is-open {
-            display: flex;
+            display: block;
             flex-direction: column;
             overflow-y: scroll;
         }
@@ -61,14 +61,23 @@
 }
 
 .mobile-menu__link {
-    @include FontStyles(500, 40px, 1.18, null, 0.02em, null, null);
+font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+
+    transition: color var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
     &--current {
-        @include FontStyles(500, 40px, 1.18, null, 0.02em, var (
-
-        ), null);
+       
+        color: var(--accent-color); }
     }
-}
 
 .mobile-menu__contacts {
     margin-top: auto;
@@ -80,16 +89,18 @@
         padding-top: 32px;
         padding-bottom: 32px;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 24px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var(--main-color);
+        color: var(--third-main-color);
     
         transition: color var(--transition-timing-function);
     
         &:hover,
         &:focus {
             color: var(--accent-color);}
+                        font-size: 34px;
+                        line-height: 1.17;
 }
 
 .mobile-menu__socials {
@@ -102,6 +113,13 @@
 
 .mobile-menu__social-item {
     position: relative;
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+           
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-color);
     
 }
 
