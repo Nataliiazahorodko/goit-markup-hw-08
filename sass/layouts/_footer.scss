@@ -40,15 +40,13 @@ address {
 }
 
 .contact-footer {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
 
-      @include mq(mobile-only) {
-          margin-bottom: 60px;
-        }
-
-    @include mq(desktop) {
-      margin-right: 70px;
-      }
- 
+  @include mq(desktop) {
+    margin-right: 70px;
+  }
 }
 
 .link-footer {
@@ -57,11 +55,10 @@ address {
 }
 
 .footer-item {
-
   margin-bottom: 8px;
-@include mq(desktop) {
-  margin-bottom: 8px;
-}
+  @include mq(desktop) {
+    margin-bottom: 8px;
+  }
 
   &:last-child {
     margin-bottom: 0;
