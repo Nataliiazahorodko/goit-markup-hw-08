@@ -40,9 +40,12 @@
 
 /* social footer */
 
-.social-footer {
-  margin-right: 93px;
-}
+// .social-footer {
+//   @include mq(desktop) {
+// margin-right: 93px;
+//   }
+ 
+// }
 
 .social-title {
   margin-bottom: 20px;
