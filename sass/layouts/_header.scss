@@ -16,6 +16,12 @@
 }
 
 .header__logo {
+    @include mq(mobile-only) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+
   @include mq(desktop) {
     margin-right: 93px;
   }
