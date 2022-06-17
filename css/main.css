@@ -1569,6 +1569,12 @@ address {
     margin-right: 30px;
     margin-top: 30px;
   }
+  .gallery-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .gallery-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1578,17 +1584,12 @@ address {
     margin-right: 30px;
     margin-top: 30px;
   }
-  .gallery-item:nth-last-child(-n+3) {
+  .gallery-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .gallery-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
-}
-
-.gallery-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.gallery-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .gallery-link {
