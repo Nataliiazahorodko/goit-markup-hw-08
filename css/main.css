@@ -264,14 +264,31 @@ img {
 /*  модальное окно */
 .backdrop {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   opacity: 1;
   -webkit-transition: opacity var(--transition-timing-function), visibility var(--transition-timing-function);
   transition: opacity var(--transition-timing-function), visibility var(--transition-timing-function);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .backdrop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .backdrop.is-hidden {
@@ -296,7 +313,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
+  height: 100%;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -306,6 +324,13 @@ img {
   transition: opacity var(--transition-timing-function), -webkit-transform var(--transition-timing-function);
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function);
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function), -webkit-transform var(--transition-timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .btn-close {
@@ -349,12 +374,22 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  text-align: center;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.5;
+  }
 }
 
 .modal-form__group {
@@ -509,11 +544,18 @@ img {
 }
 
 .modal-form__policy-desc {
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.16px;
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--third-main-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__policy-desc {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
 
 .modal-form__policy-desc-link {
@@ -767,6 +809,7 @@ img {
 }
 
 .menu-toggle {
+  z-index: 10;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -805,6 +848,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .mobile-menu {
+    z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
