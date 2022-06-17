@@ -23,6 +23,7 @@
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
+    
   }
   @include mq(tablet-only) {
     flex-basis: calc(100% / 3 - 30px);
