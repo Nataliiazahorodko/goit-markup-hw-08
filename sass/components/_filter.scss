@@ -2,12 +2,29 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  @include mq(tablet) {
+    justify-content: center;
+  }
+
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include mq(tablet-only) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-item {
-  margin-right: 8px;
+
+  display: block;
+  // margin-right: 8px;
 }
 
 .filter-item:last-child {
