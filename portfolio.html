@@ -21,20 +21,20 @@
       referrerpolicy="no-referrer"
     />
     <!--Customs styles-->
-        <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <a class="logo link header__logo" href="index.html" lang="en">Web<span
-            class="logo__right logo__right--main">Studio</span></a>
+        <a class="logo link header__logo" href="index.html" lang="en"
+          >Web<span class="logo__right logo__right--main">Studio</span></a
+        >
         <nav class="nav">
           <ul class="nav__list">
-                            <li class="nav__item"><a class="link nav__link" href="./index.html">Студия</a></li>
-                            <li class="nav__item"><a class="link nav__link current" href="">Портфолио</a></li>
-                            <li class="nav__item"><a class="link nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="link nav__link" href="./index.html">Студия</a></li>
+            <li class="nav__item"><a class="link nav__link current" href="">Портфолио</a></li>
+            <li class="nav__item"><a class="link nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contact__list">
@@ -43,14 +43,16 @@
               <svg class="header-contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
           <li class="header-contact__item">
             <a class="link header-contact__link" href="tel:+380961111111">
               <svg class="header-contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
         <!-- <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -59,80 +61,115 @@
               </svg>
             </button> -->
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40" viewBox="0 0 20 20" aria-label="Переключатель мобильного меню" fill="currentColor"
-            href="./images/icons.svg#icon-mobile-menu">
-            <path fill-rule="evenodd"
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 20 20"
+            aria-label="Переключатель мобильного меню"
+            fill="currentColor"
+            href="./images/icons.svg#icon-mobile-menu"
+          >
+            <path
+              fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
       </div>
     </header>
 
-        <!-- Mobile menu-->
-        
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <!-- <button type="button" class="menu-toggle js-close-menu">
+    <!-- Mobile menu-->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <!-- <button type="button" class="menu-toggle js-close-menu">
                       <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
                         <use class="icon-close" href="./images/icons.svg#icon-close_mobile-menu"></use>
                       </svg>
             </button> -->
-          <button class="menu-toggle js-close-menu">
-            <svg viewBox="0 0 20 20" href="./images/icons.svg#icon-close_mobile-menu" width="40" height="40">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        
-          <ul class="mobile-menu__nav">
-            <li class="mobile-menu__item">
-              <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">
-                Студия
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="link mobile-menu__link"> Портфолио </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="" class="link mobile-menu__link"> Контакты </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__contacts">
-            <li class="mobile-menu__contacts-item">
-              <a href="tel:+380961111111" class="link mobile-menu__contacts-link">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-menu__contacts-item">
-              <a href="mailto:info@devstudio.com" class="link mobile-menu__contacts-link">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__socials">
-            <li class="mobile-menu__social-item">
-              <a href="" target="_blank" rel="noopenen noreferrer" class="link mobile-menu__social-link">
-                Instagram
-              </a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" target="_blank" rel="noopenen noreferrer" class="link mobile-menu__social-link">
-                Twitter
-              </a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" target="_blank" rel="noopenen noreferrer" class="link mobile-menu__social-link">
-                Facebook
-              </a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="" target="_blank" rel="noopenen noreferrer" class="link mobile-menu__social-link">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          href="./images/icons.svg#icon-close_mobile-menu"
+          width="40"
+          height="40"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">
+            Студия
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="link mobile-menu__link"> Портфолио </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="link mobile-menu__link"> Контакты </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+          <a href="tel:+380961111111" class="link mobile-menu__contacts-link">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a href="mailto:info@devstudio.com" class="link mobile-menu__contacts-link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__social-item">
+          <a
+            href=""
+            target="_blank"
+            rel="noopenen noreferrer"
+            class="link mobile-menu__social-link"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            href=""
+            target="_blank"
+            rel="noopenen noreferrer"
+            class="link mobile-menu__social-link"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            href=""
+            target="_blank"
+            rel="noopenen noreferrer"
+            class="link mobile-menu__social-link"
+          >
+            Facebook
+          </a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            href=""
+            target="_blank"
+            rel="noopenen noreferrer"
+            class="link mobile-menu__social-link"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- секция портфолио -->
     <main>
@@ -158,13 +195,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/tech.jpg"
-                    alt="на экране ноутбука трое людей"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg.jpg    1x,
+                        ./images/portfolio/img-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md.jpg    1x,
+                        ./images/portfolio/img-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm.jpg    1x,
+                        ./images/portfolio/img-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/tech.jpg"
+                      alt="на экране ноутбука трое людей"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -180,13 +248,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/poster.jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg.jpg    1x,
+                        ./images/portfolio/img-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md.jpg    1x,
+                        ./images/portfolio/img-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm.jpg    1x,
+                        ./images/portfolio/img-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/poster.jpg"
+                      alt="два баскетболиста"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -204,13 +303,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/rest.jpg"
-                    alt="логотип ресторан сефуд"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg.jpg    1x,
+                        ./images/portfolio/img-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md.jpg    1x,
+                        ./images/portfolio/img-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm.jpg    1x,
+                        ./images/portfolio/img-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/rest.jpg"
+                      alt="логотип ресторан сефуд"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -226,13 +356,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg.jpg    1x,
+                        ./images/portfolio/img-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md.jpg    1x,
+                        ./images/portfolio/img-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm.jpg    1x,
+                        ./images/portfolio/img-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/prime.jpg"
+                      alt="наушники"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -248,13 +409,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg.jpg    1x,
+                        ./images/portfolio/img-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md.jpg    1x,
+                        ./images/portfolio/img-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm.jpg    1x,
+                        ./images/portfolio/img-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/boxes.jpg"
+                      alt="коробки"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -271,13 +463,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="экран монитора"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg.jpg    1x,
+                        ./images/portfolio/img-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md.jpg    1x,
+                        ./images/portfolio/img-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm.jpg    1x,
+                        ./images/portfolio/img-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/inspiration.jpg"
+                      alt="экран монитора"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -293,13 +516,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/limited.jpg"
-                    alt="страницы журнала"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg.jpg    1x,
+                        ./images/portfolio/img-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md.jpg    1x,
+                        ./images/portfolio/img-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm.jpg    1x,
+                        ./images/portfolio/img-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/limited.jpg"
+                      alt="страницы журнала"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -316,13 +570,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/lab.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg.jpg    1x,
+                        ./images/portfolio/img-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md.jpg    1x,
+                        ./images/portfolio/img-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm.jpg    1x,
+                        ./images/portfolio/img-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/lab.jpg"
+                      alt="бирка"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -338,13 +623,44 @@
             <li class="gallery-item">
               <a class="link gallery-link" href="">
                 <div class="card-img">
-                  <img
-                    class="gallery-img"
-                    src="./images/portfolio/growing.jpg"
-                    alt="руки на клавиатуре открытого ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg.jpg    1x,
+                        ./images/portfolio/img-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md.jpg    1x,
+                        ./images/portfolio/img-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm.jpg    1x,
+                        ./images/portfolio/img-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery-img"
+                      src="./images/portfolio/growing.jpg"
+                      alt="руки на клавиатуре открытого ноутбука"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <p class="overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -366,16 +682,24 @@
       <div class="footer__container container">
         <div class="footer__group">
           <div class="contact-footer">
-            <a class="logo link link-footer" href="index.html" lang="en">Web<span
-                class="logo__right--footer">Studio</span></a>
+            <a class="logo link link-footer" href="index.html" lang="en"
+              >Web<span class="logo__right--footer">Studio</span></a
+            >
             <address>
               <ul class="adress-list">
                 <li class="footer-item">
-                  <a class="link footer-address-link" href="https://bit.ly/3pXMvUd" target="_blank"
-                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a
+                    class="link footer-address-link"
+                    href="https://bit.ly/3pXMvUd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
                 </li>
                 <li class="footer-item">
-                  <a class="link footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="link footer-contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer-item">
                   <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -383,37 +707,57 @@
               </ul>
             </address>
           </div>
-    
+
           <div class="social-footer">
             <h3 class="social-title">присоединяйтесь</h3>
             <ul class="social list">
               <li class="footer-social-item">
-                <a class="footer-social-link link" href="" target="_blank" rel="noopener noreferrer"
-                  aria-label="иконка инстаграм">
+                <a
+                  class="footer-social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка инстаграм"
+                >
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="footer-social-link link" href="" target="_blank" rel="noopener noreferrer"
-                  aria-label="иконка инстаграм">
+                <a
+                  class="footer-social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка инстаграм"
+                >
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="footer-social-link link" href="" target="_blank" rel="noopener noreferrer"
-                  aria-label="иконка инстаграм">
+                <a
+                  class="footer-social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка инстаграм"
+                >
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="footer-social-link link" href="" target="_blank" rel="noopener noreferrer"
-                  aria-label="иконка инстаграм">
+                <a
+                  class="footer-social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка инстаграм"
+                >
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -422,12 +766,12 @@
             </ul>
           </div>
         </div>
-    
+
         <div class="footer-subscription">
           <h3 class="subscription-title">Подпишитесь на рассылку</h3>
           <form class="subscription-form">
             <input class="form-email" type="email" name="email" placeholder="E-mail" />
-    
+
             <button class="btn main__button" type="submit">
               Подписаться
               <svg class="footer-button-icon" width="24" height="24">
@@ -439,9 +783,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
