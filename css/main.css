@@ -923,11 +923,17 @@ img {
   color: var(--third-main-color);
   -webkit-transition: color var(--transition-timing-function);
   transition: color var(--transition-timing-function);
-  font-size: 34px;
-  line-height: 1.17;
 }
 
 .mobile-menu__contacts-link:hover, .mobile-menu__contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__contacts-link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 

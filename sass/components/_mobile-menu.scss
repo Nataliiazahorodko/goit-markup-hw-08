@@ -105,9 +105,18 @@
   &:focus {
     color: var(--accent-color);
   }
-  font-size: 34px;
-  line-height: 1.17;
+  
 }
+
+.mobile-menu__contacts-link-tel {
+  font-weight: 500;
+  font-size: 34px;
+    line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  }
+
 
 .mobile-menu__socials {
   display: flex;
