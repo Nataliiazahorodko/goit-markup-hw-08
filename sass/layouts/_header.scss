@@ -71,11 +71,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
 
-    @include mq(desktop) {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+  @include mq(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

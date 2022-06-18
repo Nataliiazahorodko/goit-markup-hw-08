@@ -1063,7 +1063,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .header-contact__link:hover, .header-contact__link:focus {
+  .header-contact__link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
