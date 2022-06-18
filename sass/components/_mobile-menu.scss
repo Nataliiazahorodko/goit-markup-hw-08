@@ -25,18 +25,6 @@
   }
 
   padding: 10px 0;
-
-  // & .icon-close {
-  //     display: none;
-  // }
-
-  // &.is-open .icon-close {
-  //     display: block;
-  // }
-
-  // &.is-open .icon-menu {
-  //     display: none;
-  // }
 }
 .mobile-menu {
   display: none;
@@ -59,9 +47,9 @@
 
     &.is-open {
       transform: translateX(0);
-     display: flex;
+      display: flex;
       flex-direction: column;
-    overflow-y: scroll; 
+      overflow-y: scroll;
     }
   }
 }
@@ -70,7 +58,6 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  
 }
 
 .mobile-menu__item:not(:last-child) {
