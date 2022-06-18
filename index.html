@@ -213,33 +213,66 @@
           <h2 class="doing__title">Чем мы занимаемся</h2>
           <ul class="doing__list">
             <li class="doing__item">
-              <img
-                class="doing__image"
-                src="./images/doing/img-1.jpg"
-                alt="програмист пишет код"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/img-1_lg.jpg 1x, ./images/doing/img-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="doing__image"
+                  src="./images/doing/img-1.jpg"
+                  alt="програмист пишет код"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="doing__image-text">Десктопные приложения</p>
             </li>
             <li class="doing__item">
-              <img
-                class="doing__image"
-                src="./images/doing/img-2.jpg"
-                alt="разработка мобильных приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/img-2_lg.jpg 1x, ./images/doing/img-2_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="doing__image"
+                  src="./images/doing/img-2.jpg"
+                  alt="разработка мобильных приложений"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="doing__image-text">Мобильные приложения</p>
             </li>
             <li class="doing__item">
-              <img
-                class="doing__image"
-                src="./images/doing/img-3.jpg"
-                alt="палитра на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/img-2_lg.jpg 1x, ./images/doing/img-2_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="doing__image"
+                  src="./images/doing/img-3.jpg"
+                  alt="палитра на планшете"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="doing__image-text">Дизайнерские решения</p>
             </li>
           </ul>
