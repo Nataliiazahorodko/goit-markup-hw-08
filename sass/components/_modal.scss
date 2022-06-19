@@ -45,12 +45,14 @@
   top: 50%;
   left: 50%;
 
- max-width: 450px;
-  
-  @include mq(mobile) {
+@media screen and (max-width: 479px) {
+    max-width: 450px;
+  }
+
+  @media screen  and (min-width: 480px) and (max-width: 1199px) {
       width: 450px;
-     
     }
+  
 
   @include mq(desktop) {
     width: 528px;
