@@ -16,10 +16,8 @@
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.2);
 
-  overflow-y: scroll;
-
   opacity: 1;
-
+  visibility: visible;
   transition: opacity var(--transition-timing-function),
     visibility var(--transition-timing-function);
 
@@ -33,28 +31,23 @@
     transform: translate(-50%, -50%) scale(0.4);
     opacity: 0;
   }
-
-  & .modal {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
+    
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  max-width: 450px;
+  overflow-y: scroll;
 
-@media screen and (max-width: 479px) {
-    max-width: 450px;
-  }
-
-  @media screen  and (min-width: 480px) and (max-width: 1199px) {
-      width: 450px;
+  @media screen and (max-width: 479px) {
+      max-height: 560px;
+      
     }
-  
 
   @include mq(desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     max-width: 528px;
     max-height: 581px;
   }
@@ -66,7 +59,16 @@
   border-radius: 4px;
   background-color: var(--bg-color);
 
+  @include mq(desktop) {
+    transform: scale(1) translate(-50%, -50%);
+  }
+
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function);
+  
+
+  .backdrop.is-hidden & {
+    transform: scale(0.9);
+  }
 }
 
 .btn-close {
@@ -253,7 +255,6 @@
 }
 
 .modal-form__policy-desc {
- 
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
