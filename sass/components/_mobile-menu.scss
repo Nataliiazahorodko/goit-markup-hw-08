@@ -124,6 +124,8 @@
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 10px;
+
+  
 }
 
 .mobile-menu__social-item {
@@ -135,6 +137,9 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+
+ 
+  
 }
 
 .mobile-menu__social-item:not(:last-child) > .mobile-menu__social-link::after {

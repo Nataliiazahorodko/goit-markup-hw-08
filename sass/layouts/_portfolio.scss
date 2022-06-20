@@ -4,7 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  
+
+  @include mq(desktop) {
+    margin-top: -30px;
+  }
 }
 
 .gallery-item {
