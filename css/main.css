@@ -900,12 +900,16 @@ img {
 
 .mobile-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--main-color);
   -webkit-transition: color var(--transition-timing-function);
   transition: color var(--transition-timing-function);
+}
+
+.mobile-menu__link include mq(mobile) {
+  font-size: 40px;
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
@@ -967,10 +971,16 @@ img {
 .mobile-menu__social-item {
   position: relative;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__social-item {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__social-item:not(:last-child) > .mobile-menu__social-link::after {
