@@ -275,6 +275,7 @@ img {
   visibility: visible;
   -webkit-transition: opacity var(--transition-timing-function), visibility var(--transition-timing-function);
   transition: opacity var(--transition-timing-function), visibility var(--transition-timing-function);
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -315,12 +316,12 @@ img {
   transition: opacity var(--transition-timing-function), -webkit-transform var(--transition-timing-function);
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function);
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function), -webkit-transform var(--transition-timing-function);
-  overflow-y: scroll;
 }
 
 @media screen and (max-width: 479px) {
   .modal {
     max-height: 560px;
+    overflow-y: scroll;
   }
 }
 
